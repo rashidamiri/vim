@@ -1,6 +1,5 @@
 set nocompatible
 set title
-"set rtp+=~/.vim/bundle/Vundle.vim
 set hlsearch
 set ruler
 set number
