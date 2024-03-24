@@ -1,11 +1,19 @@
+set nocompatible
+set title
+"set rtp+=~/.vim/bundle/Vundle.vim
+set hlsearch
+set ruler
 set number
-set relativenumber
+set mouse=a
+set noerrorbells
+set novisualbell
+set belloff=all
+set spell spelllang=en_us
 set autoindent
+set softtabstop=2
 set tabstop=2
 set shiftwidth=2
-set smarttab
-set softtabstop=2
-set mouse=a
+set expandtab
 
 call plug#begin("~/.config/nvim/plugged")
 Plug 'https://github.com/vim-airline/vim-airline'
