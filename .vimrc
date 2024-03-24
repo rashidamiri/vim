@@ -5,6 +5,7 @@ set title
 
 " vundle runtime
 " Vundle git repo https://github.com/VundleVim/Vundle.vim
+set rtp+=~/.vim/bundle/Vundle.vim
 
 " call vundle
 call vundle#begin()
