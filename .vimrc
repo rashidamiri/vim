@@ -5,7 +5,6 @@ set title
 
 " vundle runtime
 " Vundle git repo https://github.com/VundleVim/Vundle.vim
-set rtp+=~/.vim/bundle/Vundle.vim
 
 " call vundle
 call vundle#begin()
@@ -37,6 +36,7 @@ syntax on
 set hlsearch
 set ruler
 set number
+set relativenumber
 set mouse=a
 set noerrorbells
 set novisualbell
