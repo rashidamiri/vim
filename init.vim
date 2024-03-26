@@ -13,6 +13,7 @@ set softtabstop=2
 set tabstop=2
 set shiftwidth=2
 set expandtab
+set relativenumber
 
 call plug#begin("~/.config/nvim/plugged")
 Plug 'https://github.com/vim-airline/vim-airline'
@@ -33,3 +34,11 @@ nmap ne :NERDTreeToggle<CR>
 
 " Setting colorscheme
 colorscheme purify
+
+" Use <CR> to accept completion when the suggestion menu is visible
+" and fallback to inserting a newline otherwise.
+inoremap <expr> <CR> pumvisible() ? coc#pum#confirm() : "\<CR>"
+
+" (Optional) Use <C-y> to confirm completion, insert a newline otherwise
+inoremap <expr> <C-y> pumvisible() ? coc#pum#confirm() : "\<C-y>"
+
