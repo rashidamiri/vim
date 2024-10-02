@@ -14,6 +14,7 @@ set tabstop=2
 set shiftwidth=2
 set expandtab
 set relativenumber
+set nowrap
 
 call plug#begin("~/.config/nvim/plugged")
 Plug 'https://github.com/vim-airline/vim-airline'
@@ -25,7 +26,11 @@ Plug 'https://github.com/rafi/awesome-vim-colorschemes' " Retro Scheme
 Plug 'https://github.com/ryanoasis/vim-devicons' " Developer Icons
 Plug 'https://github.com/terryma/vim-multiple-cursors' " CTRL + N for multiple cursors
 Plug 'https://github.com/tc50cal/vim-terminal' " Vim Terminal
-
+Plug 'nvim-lua/plenary.nvim'
+Plug 'nvim-telescope/telescope.nvim', { 'tag': '0.1.8' }
+Plug 'Exafunction/codeium.vim'
+Plug 'tpope/vim-commentary' " For Commenting gcc & gc
+" or                                , { 'branch': '0.1.x' }
 set encoding=UTF-8
 
 call plug#end()
